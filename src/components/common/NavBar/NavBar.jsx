@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Login from '../../Login/Login';
 
-const NavBar = () => {
+const  NavBar = () => {
   return (
     <>
       <Navbar bg="light" data-bs-theme="light">
