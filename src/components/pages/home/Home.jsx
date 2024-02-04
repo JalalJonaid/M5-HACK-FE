@@ -13,7 +13,7 @@ export default function Home() {
         <GoogleMapWidget/>
         {/* <GoogleAPI/> */}
         {/* <GoogleBikeLayer/> */}
-        <GoogleRoute/>
+        {/* <GoogleRoute/> */}
     </div>
   )
 }
