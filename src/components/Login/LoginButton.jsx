@@ -6,7 +6,7 @@ import { signInWithGoogle } from "../../../fireBase";
 const Login = () => {
     return (
         <div>
-            <Button onClick={signInWithGoogle} variant="light">Login</Button>{' '}
+            <Button onClick={signInWithGoogle} variant="light">Sign In</Button>{' '}
         </div>
     )
 }

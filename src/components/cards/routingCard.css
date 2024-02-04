@@ -1,0 +1,16 @@
+.form{
+background-color: rgb(17, 255, 0);
+font-size: small;
+font-family: Georgia, 'Times New Roman', Times, serif;
+border-radius: 1.6rem;
+}
+
+.routingcard {
+    position: absolute;
+    bottom: 12rem;
+    left: 3rem;
+    z-index: 1; 
+    background-color: rgba(36, 244, 9, 0.608);
+    padding: 1.4rem;
+    border-radius: 15px;
+}
