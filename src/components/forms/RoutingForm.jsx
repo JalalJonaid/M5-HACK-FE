@@ -34,54 +34,57 @@ export default function RoutingForm({setRouteData}) {
     }
 
     return ( 
-    <div>
-        <Form onSubmit={handleSubmit}>
-            <Form.Group className="starting-latitude">
-                <Card.Title  style={{padding:"10px"}}>Starting Latitude:</Card.Title>
-                <Form.Control 
-               
-                id = "startLat"
-                type="number"
-                value={coordinates.startLat}
-                onChange={handleChange}
-                required
-                />
-            </Form.Group>
+        <>
+            <Card.Title style={{ paddingBottom: "20px", fontSize:"25px"}}>Enter Your Location</Card.Title>
+            <div>
+                <Form onSubmit={handleSubmit}>
+                    <Form.Group className="starting-latitude">
+                        <Card.Title  style={{padding:"10px"}}>Starting Latitude:</Card.Title>
+                        <Form.Control 
+                    
+                        id = "startLat"
+                        type="number"
+                        value={coordinates.startLat}
+                        onChange={handleChange}
+                        required
+                        />
+                    </Form.Group>
 
-            <Form.Group className="starting-longitude">
-                <Card.Title style={{padding:"10px"}}>Starting Longitude:</Card.Title>
-                <Form.Control 
-                id = "startLong"
-                type="number"
-                value={coordinates.startLong}
-                onChange={handleChange}
-                required
-                />
-            </Form.Group>
+                    <Form.Group className="starting-longitude">
+                        <Card.Title style={{padding:"10px"}}>Starting Longitude:</Card.Title>
+                        <Form.Control 
+                        id = "startLong"
+                        type="number"
+                        value={coordinates.startLong}
+                        onChange={handleChange}
+                        required
+                        />
+                    </Form.Group>
 
-            <Form.Group className="ending-latitude">
-                <Card.Title style={{padding:"10px"}}>Ending Latitude:</Card.Title>
-                <Form.Control 
-                id = "endLat"
-                type="number"
-                value={coordinates.endLat}
-                onChange={handleChange}
-                required
-                />
-            </Form.Group>
+                    <Form.Group className="ending-latitude">
+                        <Card.Title style={{padding:"10px"}}>Ending Latitude:</Card.Title>
+                        <Form.Control 
+                        id = "endLat"
+                        type="number"
+                        value={coordinates.endLat}
+                        onChange={handleChange}
+                        required
+                        />
+                    </Form.Group>
 
-            <Form.Group className="ending-longitude">
-                <Card.Title style={{padding:"10px"}}>Ending Longitude:</Card.Title>
-                <Form.Control 
-                id = "endLong"
-                type="number"
-                value={coordinates.endLong}
-                onChange={handleChange}
-                required
-                />
-            </Form.Group>
-            <Button style={{margin: "20px" , fontSize:"23px"}} variant="dark" type="submit">Take a Bike!</Button>
-        </Form>
-    </div>
+                    <Form.Group className="ending-longitude">
+                        <Card.Title style={{padding:"10px"}}>Ending Longitude:</Card.Title>
+                        <Form.Control 
+                        id = "endLong"
+                        type="number"
+                        value={coordinates.endLong}
+                        onChange={handleChange}
+                        required
+                        />
+                    </Form.Group>
+                    <Button style={{margin: "20px" , fontSize:"23px"}} variant="dark" type="submit">Take a Bike!</Button>
+                </Form>
+            </div>
+        </>
   )
 }
