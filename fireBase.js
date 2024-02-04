@@ -1,7 +1,6 @@
 
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { initializeApp } from 'firebase/app';
 import { GoogleAuthProvider, signInWithPopup, getAuth } from "firebase/auth";
 
 
@@ -21,10 +20,12 @@ const analytics = getAnalytics(app);
 export const auth = getAuth();
 auth.useDeviceLanguage();
 const googleProvider = new GoogleAuthProvider();
+
+
 export const signInWithGoogle = async () => {
-    try {
-  //the signInWithPopUp() method accepts ANY provider we create. This is all our authentication logic
-    signInWithPopup(googleProvider).then((res) => {
+  try {
+    //the signInWithPopUp() method accepts ANY provider we create. This is all our authentication logic
+    signInWithPopup(auth,googleProvider).then((res) => {
     const user = res.user;
     console.log(user)
   })
