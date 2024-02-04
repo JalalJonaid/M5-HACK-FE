@@ -11,7 +11,6 @@ export default function RoutingCard() {
           <Card.Body>
             <Card.Title>Enter Your Location</Card.Title>
             <RoutingForm></RoutingForm>
-            <Button variant="dark">Take a Bike</Button>
           </Card.Body>
         </Card>
       </span>
