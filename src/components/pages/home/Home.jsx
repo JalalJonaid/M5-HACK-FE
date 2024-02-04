@@ -36,7 +36,7 @@ export default function Home() {
   
 
   return (
-    <div>
+    <div className='home'>
         <RoutingCard setRouteData={setRouteData} response={response}/>
         <GoogleMapWidget/>
         {/* <GoogleAPI/> */}

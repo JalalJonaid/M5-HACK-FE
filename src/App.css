@@ -1,15 +1,16 @@
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  height: 100vh;
+  overflow-y: hidden;
   text-align: center;
-  background-image: url('/src/assets/bicycle-4417.gif');
+  /* background-image: url('/src/assets/bicycle-4417.gif'); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
 }
-
 
 .logo {
   height: 6em;
