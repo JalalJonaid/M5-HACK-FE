@@ -5,15 +5,18 @@ import GoogleMapWidget from "../../common/GoogleMapWidget/GoogleMapWidget.jsx"
 import GoogleAPI from "../../common/GoogleAPI/GoogleAPI.jsx"
 import GoogleBikeLayer from '../../common/GoogleAPI/GoogleBikeLayer.jsx';
 import GoogleRoute from '../../common/GoogleRoute/GoogleRoute.jsx';
+import './home.css'
+
+
 
 export default function Home() {
   return (
     <div>
         <RoutingCard/>
         <GoogleMapWidget/>
-        {/* <GoogleAPI/> */}
-        {/* <GoogleBikeLayer/> */}
-        {/* <GoogleRoute/> */}
+        <GoogleAPI/>
+        <GoogleBikeLayer/>
+        <GoogleRoute/>
     </div>
   )
 }

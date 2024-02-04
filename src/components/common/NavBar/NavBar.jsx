@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Login from '../../Login/Login';
+import Login from '../../Login/LoginButton';
 
 const  NavBar = () => {
   return (

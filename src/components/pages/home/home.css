@@ -1,0 +1,17 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .GoogleMapWidget {
+    flex-grow: 1;
+    position: relative;
+  }
+  
+  .routingcard {
+    position: absolute;
+bottom: 12rem;
+   left: 100px;
+    z-index: 1;
+  }
