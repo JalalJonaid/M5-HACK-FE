@@ -43,6 +43,7 @@ export default function RoutingForm({setRouteData}) {
                 type="number"
                 value={coordinates.startLat}
                 onChange={handleChange}
+                required
                 />
             </Form.Group>
 
@@ -53,6 +54,7 @@ export default function RoutingForm({setRouteData}) {
                 type="number"
                 value={coordinates.startLong}
                 onChange={handleChange}
+                required
                 />
             </Form.Group>
 
@@ -63,6 +65,7 @@ export default function RoutingForm({setRouteData}) {
                 type="number"
                 value={coordinates.endLat}
                 onChange={handleChange}
+                required
                 />
             </Form.Group>
 
@@ -73,6 +76,7 @@ export default function RoutingForm({setRouteData}) {
                 type="number"
                 value={coordinates.endLong}
                 onChange={handleChange}
+                required
                 />
             </Form.Group>
             <Button variant="dark" type="submit">Take a Bike!</Button>
