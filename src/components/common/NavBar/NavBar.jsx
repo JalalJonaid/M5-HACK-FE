@@ -7,7 +7,7 @@ const  NavBar = () => {
   return (
     <>
       <Navbar  bg="light" data-bs-theme="light" >
-        <Container>
+        <Container className='nav'>
           <Navbar.Brand href="#home">Bike The Big Apple</Navbar.Brand>
           <Nav className="navBarLoginButton">
             <Login/>
