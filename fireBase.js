@@ -42,3 +42,5 @@ export const signInWithGoogle = async () => {
       console.log(err)
     }
   }
+
+export const userName = res.user.displayName;
