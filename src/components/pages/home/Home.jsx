@@ -21,6 +21,10 @@ export default function Home() {
       long: null
     }
   })
+
+  const [response, setResponse] = useState(null)
+
+
   const [displayRoute, setDisplayRoute] = useState(false)
 
   useEffect(()=> {
@@ -33,11 +37,11 @@ export default function Home() {
 
   return (
     <div>
-        <RoutingCard setRouteData={setRouteData}/>
+        <RoutingCard setRouteData={setRouteData} response={response}/>
         <GoogleMapWidget/>
         {/* <GoogleAPI/> */}
         {/* <GoogleBikeLayer/> */}
-        {displayRoute ? <GoogleRoute routeData={routeData}/> : null }
+        {displayRoute ? <GoogleRoute routeData={routeData} setResponse={setResponse}/> : null }
         {/* <GoogleRoute routeData={routeData}/> */}
     </div>
   )
