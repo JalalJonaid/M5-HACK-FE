@@ -10,8 +10,13 @@ export default function RoutingCard({setRouteData}) {
       <span className="border border-2">
         <Card className="form" style={{ width: "20rem" }}>
           <Card.Body>
+
+            <Card.Title style={{ paddingBottom: "20px", fontSize:"25px"}}>Enter Your Location</Card.Title>
+            <RoutingForm></RoutingForm>
+
             <Card.Title>Enter Your Location</Card.Title>
             <RoutingForm setRouteData={setRouteData}/>
+
           </Card.Body>
         </Card>
       </span>

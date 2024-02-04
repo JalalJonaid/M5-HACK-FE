@@ -1,5 +1,5 @@
 .form{
-background-color: rgb(17, 255, 0);
+background-color: rgb(90, 157, 87);
 font-size: small;
 font-family: Georgia, 'Times New Roman', Times, serif;
 border-radius: 1.6rem;
@@ -7,10 +7,10 @@ border-radius: 1.6rem;
 
 .routingcard {
     position: absolute;
-    bottom: 12rem;
+    bottom: 5rem;
     left: 3rem;
     z-index: 1; 
-    background-color: rgba(36, 244, 9, 0.608);
-    padding: 1.4rem;
+    background-color: rgba(225,255,221,0.608);
+    padding: 0.6rem;
     border-radius: 15px;
 }
