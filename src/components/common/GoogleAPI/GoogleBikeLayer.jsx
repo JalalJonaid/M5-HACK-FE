@@ -11,14 +11,12 @@ const GoogleBikeLayer = () => {
         version: "weekly",
         ...additionalOptions,
       });
-
-    const thisMap = (<div id='map'></div>)
       
     loader.load().then(async () => {
         const { Map } = await google.maps.importLibrary("maps");
     
         map = new Map(document.getElementById("map"), {
-            center: { lat: 42.3726399, lng: -71.1096528 },
+            center: { lat: 40.730610, lng: -73.935242 },
             zoom: 14,
         });
 
