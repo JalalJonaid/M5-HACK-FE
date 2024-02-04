@@ -9,7 +9,7 @@ export default function RoutingCard() {
       <span className="border border-2">
         <Card className="form" style={{ width: "20rem" }}>
           <Card.Body>
-            <Card.Title style={{ paddingBottom: "20px", fontSize:"25px"}}>Enter Your Location</Card.Title>
+            <Card.Title style={{ paddingBottom: "5px", fontSize:"25px"}}>Enter Your Location</Card.Title>
             <RoutingForm></RoutingForm>
           </Card.Body>
         </Card>
