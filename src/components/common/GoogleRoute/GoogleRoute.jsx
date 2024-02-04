@@ -2,7 +2,7 @@ import { Loader } from '@googlemaps/js-api-loader';
 import React from 'react';
 
 
-const GoogleRoute = () => {
+const GoogleRoute = ({routeData}) => {
     const key = import.meta.env.VITE_API_KEY
     let map;
     const additionalOptions = {}
@@ -22,11 +22,18 @@ const GoogleRoute = () => {
 
         // Inits
 
+        let start;
+        let end;
         let directionsService = new google.maps.DirectionsService();
         let directionsRenderer = new google.maps.DirectionsRenderer();
 
-        let start = new google.maps.LatLng(40.730610, -73.935242);
-        let end = new google.maps.LatLng(40.730610, -73.235242)
+        if(routeData.start.lat){
+            start = new google.maps.LatLng(routeData.start.lat, routeData.start.long);
+            end = new google.maps.LatLng(routeData.end.lat, routeData.end.long)
+        }
+        
+        // start = new google.maps.LatLng(40.730610, -73.935242);
+        // end = new google.maps.LatLng(40.730610, -73.235242)
 
         let mapOptions = {
             zoom: 7,

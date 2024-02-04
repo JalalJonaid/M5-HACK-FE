@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import {Form, Card, Button} from 'react-bootstrap';
 
 
-export default function RoutingForm() {
+export default function RoutingForm({setRouteData}) {
     const [coordinates, setCoordinates] = useState({
         startLat: "",
         startLong: "",
@@ -17,6 +17,16 @@ export default function RoutingForm() {
         e.preventDefault();
         console.log("Starting Coordinates:", coordinates.startLat, coordinates.startLong);
         console.log("Ending Coordinates:", coordinates.endLat, coordinates.endLong);
+        setRouteData({
+            start: {
+                lat: coordinates.startLat,
+                long: coordinates.startLong
+            },
+            end: {
+                lat: coordinates.endLat,
+                long: coordinates.endLong
+            }
+        })
     } 
 
     const handleChange = (e) => {
@@ -33,6 +43,7 @@ export default function RoutingForm() {
                 type="number"
                 value={coordinates.startLat}
                 onChange={handleChange}
+                required
                 />
             </Form.Group>
 
@@ -43,6 +54,7 @@ export default function RoutingForm() {
                 type="number"
                 value={coordinates.startLong}
                 onChange={handleChange}
+                required
                 />
             </Form.Group>
 
@@ -53,6 +65,7 @@ export default function RoutingForm() {
                 type="number"
                 value={coordinates.endLat}
                 onChange={handleChange}
+                required
                 />
             </Form.Group>
 
@@ -63,6 +76,7 @@ export default function RoutingForm() {
                 type="number"
                 value={coordinates.endLong}
                 onChange={handleChange}
+                required
                 />
             </Form.Group>
             <Button variant="dark" type="submit">Take a Bike!</Button>
