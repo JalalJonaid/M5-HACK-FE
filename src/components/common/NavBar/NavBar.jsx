@@ -6,19 +6,18 @@ import "./NavBar.css";
 const NavBar = () => {
   return (
     <>
-      <Navbar bg="light" data-bs-theme="light" style={{width:"100vw"}}>
+      <Navbar bg="light" data-bs-theme="light" style={{ width: "100vw" }}>
         <Container
           style={{
-            width:"100%",
+            width: "100%",
             backgroundColor: "rgb(90, 157, 87)",
             padding: "20px",
             borderRadius: "5px",
-            maxWidth: "100%"
+            maxWidth: "100%",
           }}
         >
           <Navbar.Brand
             style={{
-              
               color: "white",
               backgroundColor: "rgba(0, 0, 0, 0.8)",
               borderRadius: "5px",
