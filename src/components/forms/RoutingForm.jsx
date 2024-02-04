@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
-import {Form, Card, Button} from 'react-bootstrap';
-
+import React, { useState } from "react";
+import { Form, Card, Button } from "react-bootstrap";
 
 export default function RoutingForm({setRouteData}) {
     const [coordinates, setCoordinates] = useState({
@@ -29,9 +28,9 @@ export default function RoutingForm({setRouteData}) {
         })
     } 
 
-    const handleChange = (e) => {
-        setCoordinates({ ...coordinates, [e.target.id]: e.target.value})
-    }
+  const handleChange = (e) => {
+    setCoordinates({ ...coordinates, [e.target.id]: e.target.value });
+  };
 
     return ( 
         <>
