@@ -27,8 +27,9 @@ export default function RoutingForm() {
     <div>
         <Form onSubmit={handleSubmit}>
             <Form.Group className="starting-latitude">
-                <Card.Title>Starting Latitude:</Card.Title>
+                <Card.Title  style={{padding:"10px"}}>Starting Latitude:</Card.Title>
                 <Form.Control 
+               
                 id = "startLat"
                 type="number"
                 value={coordinates.startLat}
@@ -37,7 +38,7 @@ export default function RoutingForm() {
             </Form.Group>
 
             <Form.Group className="starting-longitude">
-                <Card.Title>Starting Longitude:</Card.Title>
+                <Card.Title style={{padding:"10px"}}>Starting Longitude:</Card.Title>
                 <Form.Control 
                 id = "startLong"
                 type="number"
@@ -47,7 +48,7 @@ export default function RoutingForm() {
             </Form.Group>
 
             <Form.Group className="ending-latitude">
-                <Card.Title>Ending Latitude:</Card.Title>
+                <Card.Title style={{padding:"10px"}}>Ending Latitude:</Card.Title>
                 <Form.Control 
                 id = "endLat"
                 type="number"
@@ -57,7 +58,7 @@ export default function RoutingForm() {
             </Form.Group>
 
             <Form.Group className="ending-longitude">
-                <Card.Title>Ending Longitude:</Card.Title>
+                <Card.Title style={{padding:"10px"}}>Ending Longitude:</Card.Title>
                 <Form.Control 
                 id = "endLong"
                 type="number"
@@ -65,7 +66,7 @@ export default function RoutingForm() {
                 onChange={handleChange}
                 />
             </Form.Group>
-            <Button variant="dark" type="submit">Take a Bike!</Button>
+            <Button style={{margin: "20px" , fontSize:"23px"}} variant="dark" type="submit">Take a Bike!</Button>
         </Form>
     </div>
   )
