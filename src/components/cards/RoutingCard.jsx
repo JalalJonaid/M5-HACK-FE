@@ -24,7 +24,8 @@ export default function RoutingCard({setRouteData, response}) {
           }}
         >
           <Card.Body>
-            {response ? <DirectionsCard response={response}/> : <RoutingForm setRouteData={setRouteData}/>}
+            <RoutingForm setRouteData={setRouteData}/>
+            {/* {response ? <DirectionsCard response={response}/> : <RoutingForm setRouteData={setRouteData}/>} */}
           </Card.Body>
         </Card>
       </span>
