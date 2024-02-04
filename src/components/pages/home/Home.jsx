@@ -1,8 +1,8 @@
 import React from 'react'
-import RoutingCard from '../cards/RoutingCard.jsx'
+import RoutingCard from '../../cards/RoutingCard.jsx'
 import Card from "react-bootstrap/Card";
-import GoogleMapWidget from "../common/GoogleMapWidget/GoogleMapWidget.jsx"
-import GoogleAPI from "../common/GoogleAPI/GoogleAPI.jsx"
+import GoogleMapWidget from "../../common/GoogleMapWidget/GoogleMapWidget.jsx"
+import GoogleAPI from "../../common/GoogleAPI/GoogleAPI.jsx"
 
 export default function Home() {
   return (

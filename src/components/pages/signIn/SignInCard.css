@@ -1,0 +1,12 @@
+.signInCardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  
+  .signInCard {
+    width: 20rem;
+    text-align: center;
+  }
+  
