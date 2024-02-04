@@ -13,7 +13,6 @@ const LocateUser = () => {
                     lat: pos.coords.latitude,
                     long: pos.coords.longitude
                 })
-                // console.log(pos.coords.latitude, pos.coords.longitude)
             })
     } 
         
