@@ -1,5 +1,5 @@
 import React from 'react';
-import "./GoogleMapWidget.css"
+import './GoogleMapWidget.css'
 // Place this and Google 
 
 

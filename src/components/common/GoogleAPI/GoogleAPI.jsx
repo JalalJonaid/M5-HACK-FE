@@ -11,8 +11,6 @@ const GoogleAPI = () => {
         version: "weekly",
         ...additionalOptions,
       });
-
-    const thisMap = (<div id='map'></div>)
       
     loader.load().then(async () => {
         const { Map } = await google.maps.importLibrary("maps");

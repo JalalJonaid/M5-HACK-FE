@@ -11,7 +11,6 @@ const GoogleBikeLayer = () => {
         version: "weekly",
         ...additionalOptions,
       });
-
       
     loader.load().then(async () => {
         const { Map } = await google.maps.importLibrary("maps");
