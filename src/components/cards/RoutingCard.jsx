@@ -2,8 +2,12 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import RoutingForm from "../forms/RoutingForm";
-import "./routingCard.css";
-export default function RoutingCard() {
+
+import './routingCard.css'
+import DirectionsCard from "./DirectionsCard";
+
+export default function RoutingCard({setRouteData, response}) {
+
   return (
     <div className="routingcard">
       <span className="border border-2">
@@ -20,10 +24,7 @@ export default function RoutingCard() {
           }}
         >
           <Card.Body>
-            <Card.Title style={{ paddingBottom: "5px", fontSize: "25px" }}>
-              Enter Your Location
-            </Card.Title>
-            <RoutingForm></RoutingForm>
+            {response ? <DirectionsCard response={response}/> : <RoutingForm setRouteData={setRouteData}/>}
           </Card.Body>
         </Card>
       </span>
