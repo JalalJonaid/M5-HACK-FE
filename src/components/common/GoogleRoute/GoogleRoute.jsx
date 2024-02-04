@@ -2,7 +2,7 @@ import { Loader } from '@googlemaps/js-api-loader';
 import React from 'react';
 
 
-const GoogleRoute = ({routeData}) => {
+const GoogleRoute = ({routeData, setResponse}) => {
     const key = import.meta.env.VITE_API_KEY
     let map;
     const additionalOptions = {}
@@ -55,6 +55,7 @@ const GoogleRoute = ({routeData}) => {
                 console.log(result)
                 directionsRenderer.setMap(map)
                 directionsRenderer.setDirections(result)
+                setResponse(result)
             }
           })
 
