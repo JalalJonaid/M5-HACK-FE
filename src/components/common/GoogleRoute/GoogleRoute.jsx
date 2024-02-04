@@ -55,11 +55,9 @@ const GoogleRoute = ({routeData, setResponse}) => {
                 console.log(result)
                 directionsRenderer.setMap(map)
                 directionsRenderer.setDirections(result)
-                setResponse(result)
+                // setResponse(result)
             }
           })
-
-
     
         // map = new Map(document.getElementById("map"), {
         //     center: { lat: 40.730610, lng: -73.935242 },
