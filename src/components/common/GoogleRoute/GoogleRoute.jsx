@@ -55,7 +55,7 @@ const GoogleRoute = ({routeData, setResponse}) => {
                 console.log(result)
                 directionsRenderer.setMap(map)
                 directionsRenderer.setDirections(result)
-                setResponse(result)
+                // setResponse(result)
             }
           })
 
