@@ -21,7 +21,7 @@ const GoogleRoute = () => {
 
 
         // Inits
-        
+
         let directionsService = new google.maps.DirectionsService();
         let directionsRenderer = new google.maps.DirectionsRenderer();
 
@@ -32,6 +32,9 @@ const GoogleRoute = () => {
             zoom: 7,
             center: start
         }
+
+        // Replace with global state for map at some point
+        let map = new google.maps.Map(document.getElementById('map'), mapOptions);
     
         let request = {
             origin: start,
@@ -43,7 +46,7 @@ const GoogleRoute = () => {
           directionsService.route(request, (result, status) => {
             if(status == "OK"){
                 console.log(result)
-                directionsRenderer.setMap()
+                directionsRenderer.setMap(map)
                 directionsRenderer.setDirections(result)
             }
           })
